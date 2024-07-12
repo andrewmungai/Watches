@@ -1,0 +1,153 @@
+/*if you want the name to be at the top press h1{ */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* don't put box-sizing: border-box if you are going to use dropdown*/
+}
+
+header{
+    background-color:black;
+    text-align: center;
+    
+    
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+    padding: 30x;
+}
+
+
+h1{
+    
+    font-size: medium;
+    color: gold;
+    text-align: justify;
+    
+}
+
+body{
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-attachment:fixed;
+    position: absolute;
+    margin-left:0px; 
+    margin-right:0px; 
+    color: aliceblue;
+    
+    
+    
+    font-family: ;
+}
+
+
+
+.navbar ul{
+   background-color: black;
+   align-items: center;
+   justify-content: space-between;
+   /*to remove bullets*/
+   list-style:none;
+   display: flex;
+
+}
+.navbar li{
+    position: relative;
+    display: inline-block;
+
+
+}
+
+
+.navbar ul li a{
+    color: gold;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+
+}
+        
+.navbar a:hover{
+    color:white;
+    transition:all 0.s ;
+
+
+}
+
+
+
+.navbar ul li ul.dropdown li {
+    display:block ;
+    
+
+}
+
+
+
+.navbar ul li ul.dropdown  {
+    width: 180%;
+    background-color: black;
+    position:absolute ;
+    z-index: 999;
+    display: none;
+    padding-bottom: 10px;
+
+}
+
+.navbar ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+.fa.fa-search{
+    color: white;
+
+}
+
+.fa.fa-shopping-cart{
+
+    color: white;
+
+}
+
+.fa.fa-bars{
+    color: white;
+
+}
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.hero-section.content{
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.hero-section.content h1{
+    font-size: 3rem;
+    max-width: 600px;
+
+}
+.hero-section.content p{
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+
+}
+
+
+
+
