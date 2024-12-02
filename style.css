@@ -3,12 +3,24 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /* don't put box-sizing: border-box if you are going to use dropdown*/
+}
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif; /* Add a font-family for readability */
+    color: aliceblue;
+    margin: 0;
 }
 
 header{
     background-color:black;
     text-align: center;
+    padding: 10px 0;
     
     
 }
@@ -28,23 +40,6 @@ h1{
     
 }
 
-body{
-    background-image: url(background.png);
-    background-size: cover;
-    background-repeat: no-repeat ;
-    background-position: center;
-    background-attachment:fixed;
-    position: absolute;
-    margin-left:0px; 
-    margin-right:0px; 
-    color: aliceblue;
-    
-    
-    
-    font-family: ;
-}
-
-
 
 .navbar ul{
    background-color: black;
@@ -57,7 +52,7 @@ body{
 }
 .navbar li{
     position: relative;
-    display: inline-block;
+    
 
 
 }
@@ -65,7 +60,7 @@ body{
 
 .navbar ul li a{
     color: gold;
-    padding-bottom: 10px;
+    padding-bottom: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -75,7 +70,7 @@ body{
         
 .navbar a:hover{
     color:white;
-    transition:all 0.s ;
+    transition: all 0.3s ease;
 
 
 }
@@ -91,12 +86,14 @@ body{
 
 
 .navbar ul li ul.dropdown  {
-    width: 180%;
+    width: 200px; /* Adjust for proper sizing */
     background-color: black;
-    position:absolute ;
+    position: absolute;
+    top: 100%;
+    left: 0;
     z-index: 999;
     display: none;
-    padding-bottom: 10px;
+    padding: 10px 0;
 
 }
 
@@ -125,6 +122,8 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 0 20px;
 
 }
@@ -145,6 +144,7 @@ body{
     font-weight: 300;
     margin-top: 15px;
     max-width: 600px;
+    color: aliceblue;
 
 }
 
