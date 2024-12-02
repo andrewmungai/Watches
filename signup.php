@@ -14,7 +14,6 @@
 <body>
 
 <?php
-//include_once("index.php");
 require_once("process-form.php");
 
 if(isset($POST["submit"])){
